@@ -1,0 +1,35 @@
+.header {
+  background-image: url(../Images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ourServices {
+  background-image: url(../Images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.serviceCard {
+  background-color: rgba(44, 41, 41, 0.662);
+}
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(-10px); 
+    }
+    50% {
+      transform: translateY(10px); 
+    }
+    100% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  .image-float {
+    animation: floatAnimation 2s infinite; 
+  }
+  
+  
