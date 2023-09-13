@@ -7,83 +7,97 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   </head>
 
   <body>
-    <section class="bg-black">
+    <section class="bg-[#030303]">
         <div class="header">
-            <nav class="flex items-center justify-between py-2 bg-transparent px-10 max-w-7xl mx-auto">
-                <div>
-                  <button class="text-white text-xl">Start</button>
+          <iframe src="./navbar.html" frameborder="0" width="100%" class="absolute h-[500px] z-[31]"></iframe>
+
+
+          <div class="max-w-7xl mx-auto relative py-10 px-10 z-[30]">
+            <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
+              <div
+                class=" flex flex-col-reverse md:flex-row lg:flex-row gap-[20px] xl:flex-row 2xl:flex-row justify-center lg:h-screen xl:h-screen mx-auto items-center relative"
+              >
+                <div class="absolute top-[30%] left-[43%]">
+                  <img src="./Images/analysis-2.png" class="w-44 h-auto hidden lg:block xl:block 2xl:block" />
                 </div>
-                <div class="flex items-center">
-                  <img src="./Images/logo1.png" class="w-24 h-auto" />
-                  <img src="./Images/logo2.png" class="w-24 h-auto" />
-                </div>
-                <div class="text-white">Socail Icon</div>
-              </nav>
-              <div class="max-w-7xl mx-auto relative py-10 px-10">
-                <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
+    
+                <div
+                  class="text w-full md:w-2/4 lg:w-2/4 xl:w-2/4 2xl:w-2/4 sm:text-center md:text-center lg:text-start mt-0 "
+                >
                   <div
-                    class="slide-content flex flex-col-reverse md:flex-row lg:flex-row gap-[20px] xl:flex-row 2xl:flex-row justify-center py-5 lg:h-screen xl:h-screen mx-auto items-center relative"
+                    class="text-center md:text-start lg:text-start xl:text-start"
                   >
-                    <div class="absolute top-[30%] left-[45%]">
-                      <img src="./Images/analysis-2.png" class="w-28 h-auto hidden lg:block xl:block 2xl:block" />
-                    </div>
-        
-                    <div
-                      class="text w-full md:w-2/4 lg:w-2/4 xl:w-2/4 2xl:w-2/4 sm:text-center md:text-center lg:text-start"
-                    >
-                      <div
-                        class="text-center md:text-start lg:text-start xl:text-start"
+                    <div class="textCirculer text-3xl lg:text-5xl xl:text-[52px] font-semibold text-white">
+                      
+                     
+                        "Your <span class="circle-border ">Financial</span> Story:
+                   
+                      <h2
+                        class="text-2xl lg:text-4xl xl:text-[42px] font-medium text-white my-3"
                       >
-                        <div>
-                          <h2
-                            class="text-3xl lg:text-5xl xl:text-[52px] font-semibold text-white"
-                          >
-                            "Your Financial Story:
-                          </h2>
-                          <h2
-                            class="text-2xl lg:text-4xl xl:text-[42px] font-medium text-white my-3"
-                          >
-                            We Craft <span class="text-yellow-600">the chapters</span>
-                          </h2>
-                        </div>
-                        <p
-                          class="text-white mt-10 font-weight-[400] leading-7 text-[15px] w-full lg:w-[450px] xl:w-[450px] 2xl:w-[450px]"
-                        >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                          do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                          laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                      </div>
-        
-                      <div class="w-full lg:w-44 xl:w-44 mt-5 text-center py-2 border border-solid border-yellow-600 text-center ">
-                        <h4 class="text-white">Contact Us</h4>
-                      </div>
+                        We Craft <span class="text-[#D3AC6A]">the chapters</span>".
+                      </h2>
                     </div>
-                    <div class="image w-full md:w-2/4 xl:w-2/4 2xl:w-2/4 relative">
-                      <img
-                        src="./Images/Group 12.png"
-                        alt="Image"
-                        class="w-[545px] h-auto mx-auto"
-                      />
-                      <div class="absolute left-[62%] top-[83%]">
-                        <img src="./Images/analysis-1.png" class="w-28 h-auto hidden lg:block xl:block 2xl:block" />
-                      </div>
-                    </div>
+                    <p
+                      class="text-white mt-10 font-weight-[400] leading-7 text-[15px] w-full lg:w-[450px] xl:w-[450px] 2xl:w-[450px]"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+    
+                  <div class="mt-5 lg:mt-10 xl:mt-10 2xl:mt-10 text-center lg:text-start xl:text-start 2xl:text-start">
+                    <a href="#" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
                   </div>
                 </div>
-                <div class="absolute top-[80%] left-[47%]">
-                  <img src="./Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
+                <div class="image w-full md:w-2/4 xl:w-2/4 2xl:w-2/4 relative mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 ">
+                  <img
+                    src="./Images/Group 12.png"
+                    alt="Image"
+                    class="w-[550px] h-auto mx-auto"
+                  />
+                  <div class="flex absolute left-[-13%] top-[84%]">
+                    <hr class="border border-[#D3AC6A] my-4 w-[450px] hidden lg:block xl:block 2xl:block" />
+                    <img src="./Images/analysis-1.png" class="w-44 h-auto hidden lg:block xl:block 2xl:block" />
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="absolute top-[80%] left-[47%]">
+              
+              <img src="./Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
+            </div>
+          </div>
+          
+          </div>
+       
+          
         </div>
+
+        <section>
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                  
+              </div>
+          </div>
+      </section>
     
     
       <div
-        class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-[30px] mt-10 lg:mt-20 xl:mt-20 2xl:mt-20 py-10 max-w-7xl mx-auto px-10"
+        class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-[30px] mt-5 lg:mt-20 xl:mt-20 2xl:mt-20 py-10 max-w-7xl mx-auto px-10"
       >
         <div
           class="w-full h-28 bg-slate-900 lg:w-28 xl:w-28 2xl:w-28 rounded-lg"
@@ -100,22 +114,23 @@
         <div
           class="w-full h-28 bg-slate-900 lg:w-28 xl:w-28 2xl:w-28 rounded-lg"
         ></div>
+        
       </div>
 
-      <div class="py-10 max-w-7xl mx-auto px-5 lg:px-10 xl:px-10 2xl:px-10">
+      <div class="py-10 max-w-7xl mx-auto px-5 lg:px-10 xl:px-10 2xl:px-10 relative">
         <div
           class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start"
         >
-          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4">
-            <img src="./Images/about-1.png" class="w-[456px] h-auto" />
+          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 opacity-50">
+            <img src="./Images/about-1.png" class="w-[456px] h-auto mx-auto lg:mx-0 xl:mx-0 2xl:mx-0" />
           </div>
-          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10">
+          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start ">
             <div class="flex gap-2">
-              <h4 class="text-yellow-600 text-xl">About Us</h4>
-              <hr class="border border-yellow-600 my-4 w-full" />
+              <span class="text-[#D3AC6A] text-2xl w-32">About Us</span>
+              <hr class="border border-[#D3AC6A] my-4 w-full" />
             </div>
 
-            <h2 class="text-4xl font-semibold text-white my-3">
+            <h2 class="text-4xl font-medium text-white my-3">
               Sollution Designed for <br />
               all your needs
             </h2>
@@ -128,27 +143,30 @@
             <!-- Add a horizontal line with CSS border -->
 
             <button
-              class="px-10 py-4 border border-solid border-yellow-600 text-white rounded my-4"
+              class="px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-4"
             >
               Read More
             </button>
           </div>
         </div>
+        <div class="absolute top-[80%] left-[47%]">
+          <img src="./Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
+        </div>
       </div>
 
       <!-- our vision -->
 
-      <div class="py-10 max-w-7xl mx-auto px-5 lg:px-10 xl:px-10 2xl:px-10">
+      <div class="py-10 max-w-7xl mx-auto px-5 lg:px-10 xl:px-10 2xl:px-10 mt-0 lg:mt-20 xl:mt-20 2xl:mt-20 relative">
         <div
           class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start"
         >
-          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10">
+          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start">
             <div class="flex gap-2 justify-start">
-              <hr class="border border-yellow-600 my-4 w-[60px]" />
-              <h4 class="text-yellow-600 text-xl">Our Vision</h4>
+              <hr class="border border-[#D3AC6A] my-4 w-[60px] md:w-full lg:w-[60px] xl:w-[60px]" />
+              <h4 class="text-[#D3AC6A]  text-2xl w-32">Our Vision</h4>
             </div>
 
-            <h2 class="text-4xl font-semibold text-white my-3">
+            <h2 class="text-4xl font-medium text-white my-3">
               We do understand <br />
               pain points
             </h2>
@@ -161,57 +179,61 @@
             <!-- Add a horizontal line with CSS border -->
 
             <button
-              class="px-10 py-4 border border-solid border-yellow-600 text-white rounded my-4"
+              class="px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-4"
             >
               Read More
             </button>
           </div>
-          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4">
+          <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 opacity-50">
             <img src="./Images/about-2.png" class="w-[456px] h-auto mx-auto" />
           </div>
+        </div>
+        <div class="absolute top-[80%] left-[47%]">
+          <img src="./Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
         </div>
       </div>
 
       <div
-        class="ourServices px-5 lg:px-20 xl:px-20 2xl:px-20 pt-[40px] lg:pt-[100px] xl:pt-[100px] 2xl:pt-[100px] pb-20"
+        class="ourServices px-5 lg:px-20 xl:px-20 2xl:px-20 pt-[20px] lg:pt-[100px] xl:pt-[100px] 2xl:pt-[100px] pb-20 relative"
       >
+      <div class="absolute top-[50%] left-5">
+        <img src="./Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
+      </div>
         <div class="container mx-auto text-center bg-transparent">
           <div class="mb-10">
             <div
-              class="flex justify-center items-center text-[#D3AC6A] pt-[160px]"
+              class="flex justify-center items-center text-[#D3AC6A] lg:pt-[160px] xl:pt-[160px] 2xl:pt-[160px]"
             >
-              <hr class="w-24 border-2" />
-              <h1 class="text-xl font-bold mb-4">Our Services</h1>
-              <hr class="w-24 border-2" />
+              <hr class="w-24 border-2 border-[#D3AC6A]" />
+              <h1 class="text-2xl font-medium">OUR SERVICES</h1>
+              <hr class="w-24 border-2 border-[#D3AC6A]" />
             </div>
-            <h3 class="text-5xl text-white font-semibold mb-4">
+            <h3 class="text-4xl text-white font-semibold mb-4">
               What We Offer
             </h3>
           </div>
 
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 pt-5"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 pt-5 max-w-5xl mx-auto"
           >
             <div
               class="px-8 py-12 text-white serviceCard justify-center items-center rounded-2xl shadow-xl"
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
                   1
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">BOOKKEEPING</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -222,21 +244,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  2
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">CAPITAL GAIN TAX</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -247,21 +267,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  3
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">INHERITENCE TAX</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -272,21 +290,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  4
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">SELF ASSESMENT & TAX RETURNS</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -297,21 +313,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  5
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">TAX SAVINGS</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -322,21 +336,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  6
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">COMPANY ACCOUNTS</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -347,21 +359,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  7
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">PAYROLL</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -372,21 +382,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  8
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">VAT</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -397,21 +405,19 @@
             >
               <div class="mx-auto text-center w-16 h-auto">
                 <div
-                  class="bg-transparent border border-solid border-yellow-600 text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
+                  class="bg-transparent border border-solid border-[#D3AC6A] text-white rounded-xl flex items-center justify-center px-3 py-4 mb-4"
                 >
-                  1
+                  9
                 </div>
               </div>
 
-              <h3 class="text-lg py-3">Lorem, ipsum dolor.</h3>
+              <h3 class="text-lg py-3">CRYPTOCURRENCY TAX</h3>
               <p class="text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <button
-                class="bg-transparent border border-solid border-yellow-600 text-[#D3AC6A] px-4 py-2 rounded mt-8"
+                class="bg-transparent border border-solid border-[#D3AC6A] text-[#D3AC6A] px-4 py-2 rounded mt-8"
               >
                 Read More
               </button>
@@ -419,7 +425,7 @@
           </div>
           <div class="mt-10">
             <button
-              class="w-64 py-2 border border-solid border-yellow-600 text-white"
+              class="w-64 py-2 border border-solid border-[#D3AC6A] text-white"
             >
               View Full List
             </button>
@@ -429,15 +435,18 @@
 
       <!-- Our review -->
 
-      <div class="py-12 px-5 lg:px-10 xl:px-10 2xl:px-10 relative">
+      <div class="reviews py-12 px-5 lg:px-10 xl:px-10 2xl:px-10 relative">
+        <div class="absolute top-[-10%] right-5">
+          <img src="./Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
+        </div>
         <div class="container mx-auto text-center">
           <div class="mb-10 relative">
             <div class="flex justify-center items-center text-[#D3AC6A] mb-4">
-              <hr class="w-24 border-2" />
-              <h1 class="text-3xl font-medium">OUR REVIEWS</h1>
-              <hr class="w-24 border-2" />
+              <hr class="w-24 border-2  border-[#D3AC6A]" />
+              <h1 class="text-2xl font-medium">OUR REVIEWS</h1>
+              <hr class="w-24 border-2 border-[#D3AC6A]" />
             </div>
-            <h3 class="text-5xl text-white font-medium mb-4">
+            <h3 class="text-4xl text-white font-medium mb-4">
               What Our Client Say's
             </h3>
         </div>
@@ -456,51 +465,116 @@
             </div>
           </div>
 
-          <div
-            class="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 py-8 px-5 mx-auto flex flex-col bg-[#353935] shadow-lg rounded-lg overflow-hidden justify-center items-center mt-[80px]"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-              alt="Client 1"
-              class="object-cover w-24 h-24 rounded-full absolute top-[40%] lg:top-[30%] xl:top-[30%]"
-            />
-            <div class="p-6 flex flex-col justify-center items-center">
-              <h3 class="text-xl font-semibold mb-2 text-white">John Doe</h3>
-              <p class="text-[#D3AC6A]">CEO, Company XYZ</p>
-              <p class="text-white mt-4 text-center">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                eget ante eu libero vehicula eleifend vel non odio."
-              </p>
+          <div class="owl-carousel relative">
+            <div class="item">
+              <div
+              class="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 py-8 px-5 mx-auto flex flex-col bg-[#141414] shadow-lg rounded-lg overflow-hidden justify-center items-center mt-[80px]"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="Client 1"
+                class="object-cover w-24 h-24 rounded-full absolute top-[10%]"
+              />
+              <div class="p-6 flex flex-col justify-center items-center">
+                <h3 class="text-xl font-semibold mb-2 text-white">John Doe</h3>
+                <p class="text-[#D3AC6A]">CEO, Company XYZ</p>
+                <p class="text-white mt-4 text-center">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                  eget ante eu libero vehicula eleifend vel non odio."
+                </p>
+              </div>
             </div>
+            </div>
+            <div class="item">
+              <div
+              class="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 py-8 px-5 mx-auto flex flex-col bg-[#141414] shadow-lg rounded-lg overflow-hidden justify-center items-center mt-[80px]"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="Client 1"
+                class="object-cover w-24 h-24 rounded-full absolute top-[10%]"
+              />
+              <div class="p-6 flex flex-col justify-center items-center">
+                <h3 class="text-xl font-semibold mb-2 text-white">John Doe</h3>
+                <p class="text-[#D3AC6A]">CEO, Company XYZ</p>
+                <p class="text-white mt-4 text-center">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                  eget ante eu libero vehicula eleifend vel non odio."
+                </p>
+              </div>
+            </div>
+            </div>
+            <div class="item">
+              <div
+              class="w-full lg:w-1/2 xl:w-1/2 2xl:w-1/2 py-8 px-5 mx-auto flex flex-col bg-[#141414] shadow-lg rounded-lg overflow-hidden justify-center items-center mt-[80px]"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="Client 1"
+                class="object-cover w-24 h-24 rounded-full absolute top-[10%]"
+              />
+              <div class="p-6 flex flex-col justify-center items-center">
+                <h3 class="text-xl font-semibold mb-2 text-white">John Doe</h3>
+                <p class="text-[#D3AC6A]">CEO, Company XYZ</p>
+                <p class="text-white mt-4 text-center">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                  eget ante eu libero vehicula eleifend vel non odio."
+                </p>
+              </div>
+            </div>
+            </div>
+
           </div>
+      
+            
+           
+
+       
         </div>
       </div>
 
       <!-- News Letter -->
-      <div class="max-w-7xl mx-auto mt-8 py-10 px-5 lg:px-10 xl:px-10 2xl:px-10">
-        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 bg-slate-950 rounded-2xl shadow-lg py-24">
-            <div class="rounded-lg shadow-md col-span-1 mx-auto">
-                <h2 class="text-5xl text-white font-semibold mb-4">Get a <span class="text-yellow-600">quote</span>
-                </h2>
-                <p class="text-white mt-8 text-3xl">"Let's grow your business together"</p>
-
-            </div>
-            <div class="flex flex-col justify-center items-center">
-                <form>
-                    <div class=" flex flex-row justify-center items-center">
-                        <label for="email" class="block text-2xl font-medium text-yellow-600 ">Contact Us</label>
-                        <input type="email" id="email" name="email" placeholder="Enter email address"
-                            class="border border-solid border-yellow-600 bg-black rounded px-8 py-2 ml-4">
-                    </div>
-
-             
-
-                </form>
-
-            </div>
-
+      <div class="relative overflow-hidden">
+        <div class="">
+          <img
+            src="./Images/NewsletterLeft.png"
+            class="absolute left-[-50%] top-[-90%]  hidden lg:block xl:block 2xl:block"
+          />
         </div>
-
+        <div class=" ">
+          <img
+            src="./Images/NewsletterRight.png"
+            class="absolute right-[-50%] top-[-90%] hidden lg:block xl:block 2xl:block"
+          />
+        </div>
+        <div class="max-w-7xl mx-auto mt-8 pt-10 pb-24 px-5 lg:px-10 xl:px-10 2xl:px-10 text-center lg:text-start xl:text-start">
+          <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 bg-[#0F0F0F] rounded-2xl shadow-lg py-24 px-5">
+              <div class="rounded-lg shadow-md col-span-1 mx-auto">
+                  <h2 class="text-5xl text-white font-semibold mb-4">Get a <span class="text-[#D3AC6A]">quote</span>
+                  </h2>
+                  <p class="text-white mt-8 text-3xl">"Let's grow your business together"</p>
+  
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                  <form>
+                      <div class=" flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-center">
+                        <div class="text-center lg:text-start xl:text-start 2xl:text-start">
+                          <a href="#" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
+                        </div>
+                          <!-- <input type="email" id="email" name="email" placeholder="Enter email address"
+                              class="border border-solid border-[#D3AC6A] bg-black rounded px-8 py-2 ml-4 mt-2 lg:mt-0 xl:mt-0 2xl:mt-0"> -->
+                      </div>
+  
+               
+  
+                  </form>
+  
+              </div>
+  
+          </div>
+    
+  
+      </div>
 
 
     
@@ -512,7 +586,7 @@
             <!-- Footer -->
 
 
-            <footer class="bg-black text-white py-6  px-5 lg:px-10 xl:px-10 2xl:px-10">
+            <footer class="bg-black text-white  py-10 border-t-2 border-t-[#D3AC6A] px-5 lg:px-10 xl:px-10 2xl:px-10 z-10">
                 <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-12 max-w-7xl mx-auto">
                     <div class="w-full text-center mb-4 md:mb-0 p-4">
                         <img src="/images/rw-01.jpg" alt="Company Logo">
@@ -520,8 +594,8 @@
                     </div>
 
                     <div class="flex flex-col w-full">
-                        <h3 class="text-lg font-semibold text-yellow-600">CONTACT</h3>
-                        <div class="border border-yellow-600 border-solid w-20 mb-2"></div>
+                        <h3 class="text-lg font-medium text-[#D3AC6A]">CONTACT</h3>
+                        <div class="border border-[#D3AC6A] border-solid w-20 mb-2"></div>
                         <ul>
                             <li><a href="#"
                                     class="text-white hover:text-white transition duration-300">+608809480194</a></li>
@@ -531,8 +605,8 @@
 
                         </ul>
 
-                        <h3 class="text-lg font-semibold mt-6 text-yellow-600  ">INFORMATION</h3>
-                        <div class="border border-yellow-600 border-solid w-24 mb-2"></div>
+                        <h3 class="text-lg font-medium mt-6 text-[#D3AC6A]  ">INFORMATION</h3>
+                        <div class="border border-[#D3AC6A] border-solid w-24 mb-2"></div>
 
                         <ul>
                             <li><a href="#" class="text-white hover:text-white transition duration-300">Privacy
@@ -545,8 +619,8 @@
                     </div>
 
                     <div class="w-full justify-left items-center ">
-                        <h3 class="text-lg font-semibold text-yellow-600 justify-left items-center ">SITE MAP</h3>
-                        <div class="border border-yellow-600 border-solid w-20 mb-2"></div>
+                        <h3 class="text-lg font-medium text-[#D3AC6A] justify-left items-center ">SITE MAP</h3>
+                        <div class="border border-[#D3AC6A] border-solid w-20 mb-2"></div>
 
                         <ul>
                             <li><a href="#" class="text-white hover:text-white transition duration-300">Home</a></li>
@@ -559,10 +633,9 @@
                         </ul>
                     </div>
 
-                    <!-- Copyright and Info -->
                     <div class="w-full md:mt-0 justify-left items-center ">
-                        <h3 class="text-lg font-semibold  text-yellow-600">Royal</h3>
-                        <div class="border border-yellow-600 border-solid w-20 mb-2"></div>
+                        <h3 class="text-lg font-medium  text-[#D3AC6A]">Royal</h3>
+                        <div class="border border-[#D3AC6A] border-solid w-20 mb-2"></div>
 
 
                         <p class="text-sm text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
@@ -572,5 +645,33 @@
                 </div>
             </footer>
 
+            <script>
+            
+
+             $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+              items: 3, 
+              loop: true, 
+              margin: 20, 
+              autoplay: true, 
+              autoplayTimeout: 3000, 
+              dots:true,
+              responsive:{
+                0:{
+                  items:1 
+                },
+                768:{
+                  items:1 
+                },
+                992:{
+                  items:1 
+                }
+              }
+            });
+          });
+          </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        
   </body>
 </html>

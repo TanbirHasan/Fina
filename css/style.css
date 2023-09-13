@@ -1,8 +1,14 @@
 .header {
   background-image: url(../Images/banner.png);
-  background-size: cover;
+  background-size: 130%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: -330px; 
+  z-index: -20;
+  background-position-y: -260px;
+}
+
+.nav{
+  background-color: #3535353e;
 }
 
 .ourServices {
@@ -13,23 +19,221 @@
 }
 
 .serviceCard {
-  background-color: rgba(44, 41, 41, 0.662);
+  background-color: #0F0F0F;
 }
 
 @keyframes floatAnimation {
-    0% {
-      transform: translateY(-10px); 
-    }
-    50% {
-      transform: translateY(10px); 
-    }
-    100% {
-      transform: translateY(-10px); 
-    }
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.image-float {
+  animation: floatAnimation 2s infinite;
+}
+
+.contactButton {
+  
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: rgb(224, 224, 224) 0px 0px 2px 0px;
+  color: rgb(159, 131, 79);
+  border: 1px solid rgb(159, 131, 79);
+  padding: 8px 60px;
+  font-family: "SourceSansPro Bold", sans-serif;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0px);
+  transition-property: color;
+  transition-duration: 0.1s;
+}
+
+.contactButton::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0px;
+  border-radius: 2px;
+  background: rgb(159, 131, 79);
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  border: none !important;
+}
+
+.contactButton:hover,
+.contactButton:focus,
+.contactButton:active {
+  color: white;
+  box-shadow: rgb(159, 131, 79) 0px 0px 6px 2px;
+  
+}
+
+.contactButton:hover::before,
+.contactButton:focus::before,
+.contactButton:active::before {
+  transform: scale(1);
+}
+
+.overlay {
+  height: 100%;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: rgb(129, 129, 129);
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: rgb(241, 241, 241);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+@keyframes border-draw {
+  0% {
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+  25% {
+    border-top: 2px solid rgb(169, 132, 63);
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+  50% {
+    border-top: 2px solid rgb(169, 132, 63);
+    border-right: 2px solid rgb(169, 132, 63);
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+  }
+  75% {
+    border-top: 2px solid rgb(169, 132, 63);
+    border-right: 2px solid rgb(169, 132, 63);
+    border-bottom: 2px solid rgb(169, 132, 63);
+    border-left: 2px solid transparent;
+  }
+  100% {
+    border-top: 2px solid rgb(169, 132, 63);
+    border-right: 2px solid rgb(169, 132, 63);
+    border-bottom: 2px solid rgb(169, 132, 63);
+    border-left: 2px solid rgb(169, 132, 63);
+  }
+}
+
+
+.circle-border {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  animation: border-draw 2s linear infinite;
+  padding: 5px; 
+}
+
+
+.textCirculer {
+  color: white;
+}
+
+
+
+.reviews{
+  background-color: #0F0F0F;
+}
+
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100px!important;
+  height: 100px!important;
+  border-radius: 100%;
+}
+
+
+.owl-carousel button.owl-dot {
+  color: white!important;
+  border: none;
+  padding: 5px!important;
+  
+}
+
+/* responsive */
+
+@media screen and (max-width: 480px) {
+  .overlay {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
   }
   
-  .image-float {
-    animation: floatAnimation 2s infinite; 
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
   }
   
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(129, 129, 129);
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
   
+  .overlay a:hover,
+  .overlay a:focus {
+    color: rgb(241, 241, 241);
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+}
