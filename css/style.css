@@ -1,11 +1,26 @@
 .header {
-  background-image: url(../Images/banner.png);
-  background-size: 130%;
+  background-image: url(../Images/coin.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: -330px; 
-  z-index: -20;
-  background-position-y: -260px;
+  background-position: center;
+  z-index: 2;
+  border-radius: 30px;
+
 }
+
+.header::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(15, 15, 15, 0.612), rgba(15, 15, 15, 0.662));
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 
 .nav{
   background-color: #3535353e;
@@ -20,7 +35,11 @@
 
 .serviceCard {
   background-color: #0F0F0F;
+  box-shadow: 0 2px 3px rgba(211, 172, 106, 0.5); 
 }
+
+
+
 
 @keyframes floatAnimation {
   0% {
@@ -185,6 +204,11 @@
   border-radius: 100%;
 }
 
+
+.owl-inner-card{
+  box-shadow: 0 3px 5px rgba(211, 172, 106, 0.5); 
+  padding-bottom: 10px;
+}
 
 .owl-carousel button.owl-dot {
   color: white!important;
