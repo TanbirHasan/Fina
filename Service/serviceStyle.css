@@ -67,10 +67,26 @@
 }
 
 .blackShadow {
+  position: relative;
+}
+.blackShadow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  bottom: 0;
+  left: 0;
   background-image: url(../Images/blackShadow.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transform: scaleX(1);
+  opacity: 0.6; 
+}
+
+.blackShadowInner {
+  transform: scale(1);
 }
 
 .company {
@@ -89,6 +105,7 @@
   background-repeat: no-repeat;
   background-position: center;
   transform: scaleX(-1);
+  opacity: 0.6; 
 }
 
 .companyInner {
