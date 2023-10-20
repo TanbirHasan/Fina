@@ -1,11 +1,13 @@
 
 /* ai image er karone contact page e menu link e jhamela hsse */
-/* .contactUs {
+.contactUs {
   background-image: url(../Images/banner.png);
   background-repeat: no-repeat;
-  background-position: center ;
-  background-size: cover;
-} */
+  background-position-x: -370px;
+  background-position-y: 300px;
+  z-index: 100;
+  background-size: 160%;
+}
 
 .contactButton {
     
