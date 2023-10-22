@@ -5,35 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="./aboutStyle.css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <section class="bg-[#030303] overflow-hidden">
       <div class="header">
-        <iframe
-          src="../navbar.html"
-          frameborder="0"
-          width="100%"
-          class="absolute h-screen z-[40]"
-        >
-        </iframe>
-
-        <div class="max-w-7xl mx-auto relative py-10 px-10 z-[30]">
-          <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
-            
+        <div class="nav">
+          <nav
+            class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
+          >
+            <div class="z-40">
+              <button class="text-white text-xl">
+                <img
+                  src="../Images/MenuIcon.png"
+                  class="w-8 h-auto text-white"
+                  onclick="openNav()"
+                />
+              </button>
+            </div>
+            <div class="items-center hidden lg:flex xl:flex 2xl:flex z-40">
+              <img src="../Images/logo1.png" class="w-24 h-auto" />
+              <img src="../Images/logo2.png" class="w-44 h-auto" />
+            </div>
+            <div class="text-white flex gap-1 items-center z-40">
+              <span
+                ><img
+                  src="../Images/linkedinicon-removebg-preview.png "
+                  class="w-12 h-auto"
+              /></span>
+              <span
+                ><img
+                  src="../Images/facebookIcon-removebg-preview.png"
+                  class="w-4 h-auto"
+              /></span>
+            </div>
+          </nav>
+    
+          <div id="myNav" class="overlay z-40">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="overlay-content">
+              <a href="#">Home</a>
+              <a href="./AboutUs/about.html" target="_blank">About</a>
+              <a href="./Service/service.html">Services</a>
+              <a href="./Service_vat/Vat.html">Service One</a>
+              <a href="./Service_comapanyAccounts/company.html">Service Two</a>
+              <a href="./Service_assesment/assesment.html">Service Three</a>
+              <a href="./Service_payroll/payroll.html">Service Four</a>
+              <a href="../Service_crypto/crypto.html">Service Five</a>
+              <a href="../ContactUs/contact.html" target="_blank">Contact</a>
+            </div>
           </div>
-         
         </div>
+
+   
       </div>
 
       <!-- about us section -->
       <div
-        class="about py-10  px-5 lg:px-10 xl:px-10 2xl:px-10 relative"
+        class="about py-10  px-5 lg:px-10 xl:px-10 2xl:px-10 relative mt-[-20px]"
       >
-      <div class="about-inner max-w-7xl mx-auto mt-5">
+      <div class="about-inner max-w-7xl mx-auto mt-3">
         <div
-        class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start"
+        class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start z-30"
       >
         <div class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4">
           <img
@@ -42,7 +79,7 @@
           />
         </div>
         <div
-          class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start z-10"
+          class="w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start z-40"
         >
           <div class="flex flex-col">
             <span class="w-16 h-2 bg-[#D3AC6A]"></span>
@@ -58,7 +95,7 @@
           </p>
 
           <button
-            class="px-10 py-3 mt-8 border border-solid border-[#D3AC6A] rounded my-4 text-[#D3AC6A]"
+            class="contactButton px-10 py-3 mt-8 border border-solid border-[#D3AC6A] rounded my-4 text-[#D3AC6A]"
           >
             Contact Us
           </button>
@@ -161,20 +198,20 @@
 
       
       <!-- Newsletter -->
-      <div class="relative overflow-hidden z-[5]">
-        <div class="">
+      <div class="relative overflow-hidden">
+        <div class="z-20">
           <img
             src="../Images/NewsletterLeft.png"
-            class="absolute left-[-50%] top-[-90%]  hidden lg:block xl:block 2xl:block"
+            class="absolute left-[-50%] top-[-80%]  hidden lg:block xl:block 2xl:block"
           />
         </div>
-        <div class=" ">
+        <div class="z-20">
           <img
             src="../Images/NewsletterRight.png"
-            class="absolute right-[-50%] top-[-90%] hidden lg:block xl:block 2xl:block"
+            class="absolute right-[-50%] top-[-80%] hidden lg:block xl:block 2xl:block"
           />
         </div>
-        <div class="max-w-7xl mx-auto mt-8 pt-10 pb-24 px-5 lg:px-10 xl:px-10 2xl:px-10 text-center lg:text-start xl:text-start">
+        <div class="max-w-7xl mx-auto mt-8 pt-10 pb-24 px-5 lg:px-10 xl:px-10 2xl:px-10 text-center lg:text-start xl:text-start z-40">
           <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 bg-[#0F0F0F] rounded-2xl shadow-lg py-24 px-5">
               <div class="rounded-lg shadow-md col-span-1 mx-auto">
                   <h2 class="text-5xl text-white font-semibold mb-4">Get a <span class="text-[#D3AC6A]">quote</span>
@@ -182,7 +219,7 @@
                   <p class="text-white mt-8 text-3xl text-light">"let's grow your business together"</p>
   
               </div>
-              <div class="flex flex-col justify-center items-center">
+              <div class="flex flex-col justify-center items-center z-40">
                   <form>
                       <div class=" flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center items-center">
                         <div class="text-center lg:text-start xl:text-start 2xl:text-start">
@@ -202,11 +239,25 @@
     </section>
        <!-- Footer -->
 
-       <iframe src="../Footer/footer.html" class="h-[950px] lg:h-[300px] xl:h-[300px]" width="100%" height="100%" scrolling="no" ></iframe>
+       <iframe src="../Footer/footer.html" class="h-[1350px] lg:h-[300px] xl:h-[300px]" width="100%" height="100%" scrolling="no" ></iframe>
 
   
 
        <!-- Footer -->   
 
+       <script>
+        function openNav() {
+         
+          document.getElementById("myNav").style.width = "30%";
+         
+    
+        }
+  
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
+
   </body>
+
 </html>

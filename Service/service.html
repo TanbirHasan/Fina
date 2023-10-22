@@ -16,9 +16,56 @@
 
     <section class="bg-[#030303]">
         <div class="header relative bg-black">
-            <iframe src="../navbar.html" frameborder="0" width="100%" class="absolute h-screen z-[50]"></iframe>
+            <div class="nav bg-[#ffffff1a]">
+                <nav
+                  class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
+                >
+                  <div class="z-40">
+                    <button class="text-white text-xl">
+                      <img
+                        src="../Images/MenuIcon.png"
+                        class="w-8 h-auto text-white"
+                        onclick="openNav()"
+                      />
+                    </button>
+                  </div>
+                  <div class="items-center hidden lg:flex xl:flex 2xl:flex z-40">
+                    <img src="../Images/logo1.png" class="w-24 h-auto" />
+                    <img src="../Images/logo2.png" class="w-44 h-auto" />
+                  </div>
+                  <div class="text-white flex gap-1 items-center z-40">
+                    <span
+                      ><img
+                        src="../Images/linkedinicon-removebg-preview.png "
+                        class="w-12 h-auto"
+                    /></span>
+                    <span
+                      ><img
+                        src="../Images/facebookIcon-removebg-preview.png"
+                        class="w-4 h-auto"
+                    /></span>
+                  </div>
+                </nav>
+          
+                <div id="myNav" class="overlay z-40">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                    >&times;</a
+                  >
+                  <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="../AboutUs/about.html" target="_blank">About</a>
+                    <a href="../Service/service.html">Services</a>
+                    <a href="../Service_vat/Vat.html">Service One</a>
+                    <a href="../Service_comapanyAccounts/company.html">Service Two</a>
+                    <a href="../Service_assesment/assesment.html">Service Three</a>
+                    <a href="../Service_payroll/payroll.html">Service Four</a>
+                    <a href="../Service_crypto/crypto.html">Service Five</a>
+                    <a href="../ContactUs/contact.html" target="_blank">Contact</a>
+                  </div>
+                </div>
+              </div>
 
-            <div class="banner max-w-7xl mx-auto relative py-10 px-10 rounded-b-[20px]">
+            <div class="banner max-w-7xl mx-auto relative px-10 rounded-b-[20px]">
                 <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
                     <div
                         class=" flex flex-col-reverse md:flex-row lg:flex-row gap-[20px] xl:flex-row 2xl:flex-row justify-center lg:h-screen xl:h-screen mx-auto items-center relative">
@@ -41,7 +88,7 @@
                             </div>
 
                             <div
-                                class="mt-5 lg:mt-[150px] xl:mt-[150px] 2xl:mt-[150px] text-center lg:text-start xl:text-start 2xl:text-start">
+                                class="mt-5 lg:mt-[50px] xl:mt-[50px] 2xl:mt-[50px] text-center lg:text-start xl:text-start 2xl:text-start">
                                 <a href="#" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
                             </div>
                         </div>
@@ -70,7 +117,7 @@
 
         <div class="secondSection bg-black">
             <div class="mb-10">
-                <div class="flex justify-center items-center text-[#D3AC6A] lg:pt-[160px] xl:pt-[160px] 2xl:pt-[160px]">
+                <div class="flex justify-center items-center text-[#D3AC6A] lg:pt-[80px] xl:pt-[80px] 2xl:pt-[80px]">
                     <hr class="w-32 border-2 border-[#D3AC6A]" />
                     <h1 class="text-xl font-medium mx-1">OTHER SERVICES</h1>
                     <hr class="w-32 border-2 border-[#D3AC6A]" />
@@ -101,7 +148,7 @@
                                 </p>
                                 <!-- Add a horizontal line with CSS border -->
         
-                                <button class="px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-8">
+                                <button class="contactButton px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-8">
                                     Contact Us
                                 </button>
                             </div>
@@ -144,7 +191,7 @@ We help our clients to start their own company and become self-employed. As a ch
                         <!-- Add a horizontal line with CSS border -->
                         <div class="w-full flex justify-end">
                             <button
-                                class="px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-8 text-end">
+                                class="contactButton px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-8 text-end">
                                Contact Us
                             </button>
                         </div>
@@ -190,7 +237,7 @@ We help our clients to start their own company and become self-employed. As a ch
                                 </p>
                                 <!-- Add a horizontal line with CSS border -->
         
-                                <button class="px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-4">
+                                <button class=" contactButton px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-4">
                                     Contact Us
                                 </button>
                             </div>
@@ -234,7 +281,7 @@ We help our clients to start their own company and become self-employed. As a ch
                         <!-- Add a horizontal line with CSS border -->
                         <div class="w-full flex justify-end">
                             <button
-                                class="px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-8 text-end">
+                                class=" contactButton px-10 py-4 border border-solid border-[#D3AC6A] text-white rounded my-8 text-end">
                                Contact Us
                             </button>
                         </div>
@@ -298,8 +345,21 @@ We help our clients to start their own company and become self-employed. As a ch
     </section>
       <!-- Footer -->
 
-            <iframe src="../Footer/footer.html" class="h-[980px] lg:h-[300px] xl:h-[300px]" width="100%" height="100%" scrolling="no" ></iframe>
+            <iframe src="../Footer/footer.html" class="h-[980px] lg:h-[350px] xl:h-[350px]" width="100%" height="100%" scrolling="no" ></iframe>
 
+
+            <script>
+                function openNav() {
+                 
+                  document.getElementById("myNav").style.width = "30%";
+                 
+            
+                }
+          
+                function closeNav() {
+                  document.getElementById("myNav").style.width = "0%";
+                }
+              </script>
 </body>
 
 </html>

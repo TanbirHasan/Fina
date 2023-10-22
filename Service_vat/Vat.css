@@ -1,5 +1,5 @@
 .header {
-    background-image: url(../Images/company.png);
+    background-image: url(../Images/vat.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -9,20 +9,16 @@
   
   }
   
-  .header::before {
-    content: "";
-    position: absolute;
-    z-index: 5;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(15, 15, 15, 0.226), rgba(15, 15, 15, 0.212));
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  .headerParent {
+    background-image: url(../Images/banner.png);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position-x: -300px; 
+    z-index: -20;
+    background-position-y: -260px;
   }
+
+
   
 
   .serviceOneCard{
@@ -64,7 +60,7 @@
     vertical-align: middle;
     transform: perspective(1px) translateZ(0px);
     transition-property: color;
-    transition-duration: 0.1s;
+    transition-duration: 0.3s;
   }
   
   .contactButton::before {
@@ -100,7 +96,47 @@
 
  
   
-
+  .overlay {
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(129, 129, 129);
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: rgb(241, 241, 241);
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  
     
 
   

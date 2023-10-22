@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CompanyAccounts</title>
+    <title>service two</title>
     <link rel="stylesheet" href="./company.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
@@ -14,62 +14,113 @@
 
 <body>
     <section class="bg-[#030303]">
-        <div class="header relative">
-            <iframe src="../navbar.html" frameborder="0" width="100%" class="absolute h-screen z-[30]"></iframe>
-
-            <div class="banner max-w-7xl mx-auto relative py-10 px-10 rounded-b-[20px]">
-                <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
-                    <div
-                        class=" flex flex-col-reverse md:flex-row lg:flex-row gap-[20px] xl:flex-row 2xl:flex-row justify-center lg:h-screen xl:h-screen mx-auto items-center relative">
-
+        <div class="headerParent">
+            <div class="nav bg-[#ffffff1a]">
+                <nav
+                  class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
+                >
+                  <div class="z-40">
+                    <button class="text-white text-xl">
+                      <img
+                        src="../Images/MenuIcon.png"
+                        class="w-8 h-auto text-white"
+                        onclick="openNav()"
+                      />
+                    </button>
+                  </div>
+                  <div class="items-center hidden lg:flex xl:flex 2xl:flex z-40">
+                    <img src="../Images/logo1.png" class="w-24 h-auto" />
+                    <img src="../Images/logo2.png" class="w-44 h-auto" />
+                  </div>
+                  <div class="text-white flex gap-1 items-center z-40">
+                    <span
+                      ><img
+                        src="../Images/linkedinicon-removebg-preview.png "
+                        class="w-12 h-auto"
+                    /></span>
+                    <span
+                      ><img
+                        src="../Images/facebookIcon-removebg-preview.png"
+                        class="w-4 h-auto"
+                    /></span>
+                  </div>
+                </nav>
+          
+                <div id="myNav" class="overlay z-40">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                    >&times;</a
+                  >
+                  <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="../AboutUs/about.html" target="_blank">About</a>
+                    <a href="./Service/service.html">Services</a>
+                    <a href="../Service_vat/Vat.html">Service One</a>
+                    <a href="../Service_comapanyAccounts/company.html">Service Two</a>
+                    <a href="../Service_assesment/assesment.html">Service Three</a>
+                    <a href="../Service_payroll/payroll.html">Service Four</a>
+                    <a href="../Service_crypto/crypto.html">Service Five</a>
+                    <a href="../ContactUs/contact.html" target="_blank">Contact</a>
+                  </div>
+                </div>
+              </div>
+            <div class="header relative">
+           
+    
+                <div class="banner max-w-7xl mx-auto relative py-10 px-10 rounded-b-[20px]">
+                    <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
                         <div
-                            class="text w-full md:w-4/6 lg:w-4/6 xl:w-4/6 2xl:w-4/6 sm:text-center md:text-center lg:text-start mt-0 z-10">
-                            <div class="text-center md:text-start lg:text-start xl:text-start">
-                                <div class="textCirculer text-3xl lg:text-5xl xl:text-[52px] font-semibold text-white">
-
-
-                                    Company Account &
-
-                                    <h2 class="text-2xl lg:text-4xl xl:text-[38px] font-light text-white my-3">
-                                        <span class="text-[#D3AC6A]">Corporation Tax</span>".
-                                    </h2>
-                                </div>
-                                <p class="text-white mt-10 font-weight-[400] leading-7 text-[15px] w-full">
-                                    Our expert team offers Company accounts preparation and Corporation Tax submission on time. Company accounts provide a snapshot of a company's financial health and are used for various purposes, including internal decision-making, compliance, and transparency to stakeholders.
-
-                                </p>
-                            </div>
-
+                            class=" flex flex-col-reverse md:flex-row lg:flex-row gap-[20px] xl:flex-row 2xl:flex-row justify-center lg:h-screen xl:h-screen mx-auto items-center relative">
+    
                             <div
-                                class="mt-5 lg:mt-10 xl:mt-10 2xl:mt-10 text-center lg:text-start xl:text-start 2xl:text-start">
-                                <a href="#" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
+                                class="text w-full md:w-4/6 lg:w-4/6 xl:w-4/6 2xl:w-4/6 sm:text-center md:text-center lg:text-start mt-0 z-10">
+                                <div class="text-center md:text-start lg:text-start xl:text-start">
+                                    <div class="textCirculer text-3xl lg:text-5xl xl:text-[52px] font-semibold text-white">
+    
+    
+                                        Company Account &
+    
+                                        <h2 class="text-2xl lg:text-4xl xl:text-[38px] font-light text-white my-3">
+                                            <span class="text-[#D3AC6A]">Corporation Tax</span>".
+                                        </h2>
+                                    </div>
+                                    <p class="text-white mt-10 font-weight-[400] leading-7 text-[15px] w-full">
+                                        Our expert team offers Company accounts preparation and Corporation Tax submission on time. Company accounts provide a snapshot of a company's financial health and are used for various purposes, including internal decision-making, compliance, and transparency to stakeholders.
+    
+                                    </p>
+                                </div>
+    
+                                <div
+                                    class="mt-5 lg:mt-10 xl:mt-10 2xl:mt-10 text-center lg:text-start xl:text-start 2xl:text-start">
+                                    <a href="#" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="image w-full md:w-2/6 xl:w-2/6 2xl:w-2/6 relative mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 ">
-                            <!-- <img
-                      src="./Images/Group 12.png"
-                      alt="Image"
-                      class="w-[550px] h-auto mx-auto"
-                    />
-                    <div class="flex absolute left-[-13%] top-[84%]">
-                      <hr class="border border-[#D3AC6A] my-4 w-[450px] hidden lg:block xl:block 2xl:block" />
-                      <img src="./Images/analysis-1.png" class="w-44 h-auto hidden lg:block xl:block 2xl:block" />
-                    </div> -->
+                            <div class="image w-full md:w-2/6 xl:w-2/6 2xl:w-2/6 relative mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 ">
+                                <!-- <img
+                          src="./Images/Group 12.png"
+                          alt="Image"
+                          class="w-[550px] h-auto mx-auto"
+                        />
+                        <div class="flex absolute left-[-13%] top-[84%]">
+                          <hr class="border border-[#D3AC6A] my-4 w-[450px] hidden lg:block xl:block 2xl:block" />
+                          <img src="./Images/analysis-1.png" class="w-44 h-auto hidden lg:block xl:block 2xl:block" />
+                        </div> -->
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-                
+                <div class="absolute top-[50%] right-0 z-10">
+    
+                    <img src="../Images/scroll.png"
+                        class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
+                </div>
+               
+    
             </div>
-            <div class="absolute top-[50%] right-0 z-10">
-
-                <img src="../Images/scroll.png"
-                    class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
-            </div>
-           
-
         </div>
+       
 
-        <div class="relative">
+        <div class="relative ">
             <div class="absolute top-[50%] left-5">
                 <img src="../Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
             </div>
@@ -177,8 +228,21 @@
     </section>
 
     <!-- Footer -->
-    <iframe src="../Footer/footer.html" class="h-[950px] lg:h-[300px] xl:h-[300px]" width="100%" height="100%"
+    <iframe src="../Footer/footer.html" class="h-[1350px] lg:h-[300px] xl:h-[300px]" width="100%" height="100%"
         scrolling="no"></iframe>
+
+        <script>
+            function openNav() {
+             
+              document.getElementById("myNav").style.width = "30%";
+             
+        
+            }
+      
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+          </script>
 
 </body>
 

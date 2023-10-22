@@ -66,7 +66,7 @@
   box-shadow: rgb(224, 224, 224) 0px 0px 2px 0px;
   color: rgb(159, 131, 79);
   border: 1px solid rgb(159, 131, 79);
-  padding: 8px 60px;
+  padding: 8px 40px;
   font-family: "SourceSansPro Bold", sans-serif;
   position: relative;
   display: inline-block;
@@ -85,7 +85,7 @@
   background: rgb(159, 131, 79);
   transform: scale(0);
   transition-property: transform;
-  transition-duration: 0.1s;
+  transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
   border: none !important;
 }
@@ -117,7 +117,7 @@
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 10%;
   width: 100%;
   text-align: center;
   margin-top: 10px;
@@ -175,6 +175,7 @@
     border-right: 2px solid rgb(169, 132, 63);
     border-bottom: 2px solid rgb(169, 132, 63);
     border-left: 2px solid rgb(169, 132, 63);
+
   }
 }
 
@@ -281,7 +282,7 @@
   background-repeat: no-repeat;
   background-position: center;
   transform: scaleX(-1);
-  opacity: 0.7; 
+  opacity: 0.5; 
 }
 
 .blackShadowLeft {
@@ -300,7 +301,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.7; 
+  opacity: 0.5; 
 }
 
 

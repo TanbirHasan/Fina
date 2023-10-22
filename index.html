@@ -14,7 +14,55 @@
   <body>
     <section class="bg-[#030303]">
         <div class="header relative">
-          <iframe src="./navbar.html" frameborder="0" width="100%" class="absolute h-screen z-[50]"></iframe>
+          <div class="nav">
+            <nav
+              class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
+            >
+              <div class="z-40">
+                <button class="text-white text-xl">
+                  <img
+                    src="./Images/MenuIcon.png"
+                    class="w-8 h-auto text-white"
+                    onclick="openNav()"
+                  />
+                </button>
+              </div>
+              <div class="items-center hidden lg:flex xl:flex 2xl:flex z-40">
+                <img src="./Images/logo1.png" class="w-24 h-auto" />
+                <img src="./Images/logo2.png" class="w-44 h-auto" />
+              </div>
+              <div class="text-white flex gap-1 items-center z-40">
+                <span
+                  ><img
+                    src="./Images/linkedinicon-removebg-preview.png "
+                    class="w-12 h-auto"
+                /></span>
+                <span
+                  ><img
+                    src="./Images/facebookIcon-removebg-preview.png"
+                    class="w-4 h-auto"
+                /></span>
+              </div>
+            </nav>
+      
+            <div id="myNav" class="overlay z-40">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="./AboutUs/about.html" target="_blank">About</a>
+                <a href="./Service/service.html">Services</a>
+                <a href="./Service_vat/Vat.html">Service One</a>
+                <a href="./Service_comapanyAccounts/company.html">Service Two</a>
+                <a href="./Service_assesment/assesment.html">Service Three</a>
+                <a href="./Service_payroll/payroll.html">Service Four</a>
+                <a href="../Service_crypto/crypto.html">Service Five</a>
+                <a href="../ContactUs/contact.html" target="_blank">Contact</a>
+              </div>
+            </div>
+          </div>
+          
 
           <div class="banner max-w-7xl mx-auto relative py-10 px-10 rounded-b-[20px]">
             <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
@@ -23,7 +71,7 @@
               >
                 
                 <div
-                  class="text w-full md:w-2/4 lg:w-2/4 xl:w-2/4 2xl:w-2/4 sm:text-center md:text-center lg:text-start mt-0 z-30"
+                  class="text w-full md:w-2/4 lg:w-2/4 xl:w-2/4 2xl:w-2/4 sm:text-center md:text-center lg:text-start mt-[-100px] z-30"
                 >
                   <div
                     class="text-center md:text-start lg:text-start xl:text-start"
@@ -49,7 +97,7 @@
                   </div>
     
                   <div class="mt-5 lg:mt-10 xl:mt-10 2xl:mt-10 text-center lg:text-start xl:text-start 2xl:text-start">
-                    <a href="#" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
+                    <a href="./ContactUs/contact.html" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
                   </div>
                 </div>
                 <div class="image w-full md:w-2/4 xl:w-2/4 2xl:w-2/4 relative mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 ">
@@ -114,6 +162,7 @@
       </div> -->
 
       <div class="blackShadowRight py-16 px-5 lg:px-10 xl:px-10 2xl:px-10 relative mt-[-30px]">
+        <hr class="border border-[#D3AC6A] my-4 w-[40%] absolute top-[18%] left-[60%]" />
           <div class="max-w-7xl mx-auto">
               <div
           class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start"
@@ -124,7 +173,7 @@
           <div class="z-10 w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start ">
             <div class="flex gap-2">
               <span class="text-[#D3AC6A] text-2xl w-32">About Us</span>
-              <hr class="border border-[#D3AC6A] my-4 w-full" />
+              
             </div>
 
             <h2 class="text-4xl font-light text-white my-3">
@@ -152,14 +201,15 @@
 
       <!-- our vision -->
 
-      <div class="blackShadowLeft py-10  px-5 lg:px-10 xl:px-10 2xl:px-10 mt-0 lg:mt-20 xl:mt-20 2xl:mt-20 relative">
+      <div class="blackShadowLeft py-10  px-5 lg:px-10 xl:px-10 2xl:px-10 mt-0 relative">
+        <hr class="border border-[#D3AC6A] my-4 w-[6%] md:w-full lg:w-[6%] xl:w-[6%] absolute top-[22%] left-0" />
         <div class="max-w-7xl mx-auto">
           <div
-          class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start py-10"
+          class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start"
         >
-          <div class="z-10 w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start">
+          <div class="z-10 w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 md:text-center text-start lg:text-start xl:text-start">
             <div class="flex gap-2 justify-start">
-              <hr class="border border-[#D3AC6A] my-4 w-[60px] md:w-full lg:w-[60px] xl:w-[60px]" />
+             
               <h4 class="text-[#D3AC6A]  text-2xl w-32">Our Vision</h4>
             </div>
 
@@ -508,7 +558,7 @@
             <!-- Footer -->
 
 
-            <iframe src="./Footer/footer.html" class="h-[950px] lg:h-[300px] xl:h-[300px]" width="100%" height="100%" scrolling="no" ></iframe>
+            <iframe src="./Footer/footer.html" class="h-[950px] lg:h-[370px] xl:h-[370px]" width="100%" height="100%" scrolling="no" ></iframe>
 
             <script>
             
@@ -535,6 +585,18 @@
             });
           });
           </script>
+       <script>
+        function openNav() {
+         
+          document.getElementById("myNav").style.width = "30%";
+         
+    
+        }
+  
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         
