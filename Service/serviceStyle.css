@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap');
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
 .header {
   background-image: url(../Images/banner.png);
   background-size: 136%;
@@ -150,4 +161,51 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+
+
+.readMore {
+  
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: rgb(224, 224, 224) 0px 0px 2px 0px;
+  color: rgb(159, 131, 79);
+  border: 1px solid rgb(159, 131, 79);
+  padding: 8px 30px;
+  font-family: "SourceSansPro Bold", sans-serif;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0px);
+  transition-property: color;
+  transition-duration: 0.1s;
+}
+
+.readMore::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0px;
+  border-radius: 2px;
+  background: rgb(159, 131, 79);
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  border: none !important;
+}
+
+.readMore:hover,
+.readMore:focus,
+.readMore:active {
+  color: white;
+  box-shadow: rgb(159, 131, 79) 0px 0px 6px 2px;
+  
+}
+
+.readMore:hover::before,
+.readMore:focus::before,
+.readMore:active::before {
+  transform: scale(1);
 }

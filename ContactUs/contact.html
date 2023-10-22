@@ -326,10 +326,15 @@
 
 <script>
   function openNav() {
-   
-    document.getElementById("myNav").style.width = "30%";
-   
+    var screenWidth = window.innerWidth;
 
+    if (screenWidth <= 767) {
+    
+      document.getElementById("myNav").style.width = "80%";
+    } else {
+     
+      document.getElementById("myNav").style.width = "30%";
+    }
   }
 
   function closeNav() {

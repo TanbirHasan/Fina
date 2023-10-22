@@ -91,7 +91,7 @@
     
                                 <div
                                     class="mt-5 lg:mt-10 xl:mt-10 2xl:mt-10 text-center lg:text-start xl:text-start 2xl:text-start">
-                                    <a href="#" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
+                                    <a href="../ContactUs/contact.html" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
                                 </div>
                             </div>
                             <div class="image w-full md:w-2/6 xl:w-2/6 2xl:w-2/6 relative mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 ">
@@ -233,12 +233,17 @@
 
         <script>
             function openNav() {
-             
-              document.getElementById("myNav").style.width = "30%";
-             
-        
+              var screenWidth = window.innerWidth;
+          
+              if (screenWidth <= 767) {
+              
+                document.getElementById("myNav").style.width = "80%";
+              } else {
+               
+                document.getElementById("myNav").style.width = "30%";
+              }
             }
-      
+          
             function closeNav() {
               document.getElementById("myNav").style.width = "0%";
             }
