@@ -11,12 +11,14 @@ body{
 
 .header {
   background-image: url(../Images/banner.png);
-  background-size: 136%;
+  width: 100%;
+  height: 100%;
+  background-size: 150%; 
   background-repeat: no-repeat;
-  background-position-x: -370px;
+  background-position: center;
   z-index: 5;
-  background-position-y: -265px;
 }
+
 
 @keyframes floatAnimation {
   0% {
@@ -145,7 +147,7 @@ body{
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 22px;
   color: rgb(129, 129, 129);
   display: block;
   transition: all 0.3s ease 0s;
