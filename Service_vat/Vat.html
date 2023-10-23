@@ -15,7 +15,7 @@
 <body>
     <section class="bg-[#030303]">
         <div class="headerParent">
-            <div class="nav bg-[#ffffff1a]">
+            <div class="nav bg-[#ffffff1a] " id="nav">
                 <nav
                   class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
                 >
@@ -405,6 +405,51 @@
               document.getElementById("myNav").style.width = "0%";
             }
           </script>
+
+
+<script>
+  var navbar = document.getElementById("myNav");
+  var entireBar = document.getElementById("nav")
+  
+
+function openNav() {
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth <= 767) {
+    navbar.style.width = "80%";
+  } else {
+    navbar.style.width = "30%";
+  }
+}
+
+function closeNav() {
+  navbar.style.width = "0%";
+}
+
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+ 
+    entireBar.style.backgroundColor = "#45474B"; 
+    entireBar.style.position = "fixed"; 
+    entireBar.style.width = "100%"; 
+    navbar.style.height="600px";
+
+    entireBar.style.top = "0"; 
+    entireBar.style.zIndex = "100"; 
+  } else {
+    // entireBar.style.backgroundColor = "#ffffff1a"; 
+   
+    entireBar.style.backgroundColor = "";
+  entireBar.style.position = ""; // Remove fixed position
+  entireBar.style.width = "";
+  navbar.style.height = "";
+  entireBar.style.top = "";
+  entireBar.style.zIndex = "";
+  }
+};
+
+      </script>
 
 </body>
 

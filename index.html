@@ -13,10 +13,10 @@
 
   <body>
     <section class="bg-[#030303]">
-        <div class="header h-auto pb-10 relative ">
-          <div class="nav">
+        <div class="header h-auto relative ">
+          <div class="nav bg-[#ffffff29]" id="nav">
             <nav
-              class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
+              class="flex items-center py-3 justify-between shadow-lg px-10 max-w-7xl mx-auto"
             >
               <div class="z-40">
                 <button class="text-white text-xl">
@@ -45,7 +45,7 @@
               </div>
             </nav>
       
-            <div id="myNav" class="overlay z-40">
+            <div id="myNav" class="overlay z-40 ">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
                 >&times;</a
               >
@@ -53,11 +53,18 @@
                 <a href="#">Home</a>
                 <a href="./AboutUs/about.html" target="_blank">About</a>
                 <a href="./Service/service.html" target="_blank">Services</a>
-                <a href="./Service_vat/Vat.html" target="_blank">Service One</a>
-                <a href="./Service_comapanyAccounts/company.html" target="_blank">Service Two</a>
-                <a href="./Service_assesment/assesment.html" target="_blank">Service Three</a>
-                <a href="./Service_payroll/payroll.html" target="_blank">Service Four</a>
-                <a href="./Service_crypto/crypto.html" target="_blank">Service Five</a>
+    
+                <div class="dropdown">
+                  <a href="javascript:void(0)" onclick="toggleNewPage()">Other Services</a>
+                  <div id="newPageLinks" class="nested-links">
+                    <a href="./Service_vat/Vat.html" target="_blank">Service One</a>
+                    <a href="./Service_comapanyAccounts/company.html" target="_blank">Service Two</a>
+                    <a href="./Service_assesment/assesment.html" target="_blank">Service Three</a>
+                    <a href="./Service_payroll/payroll.html" target="_blank">Service Four</a>
+                    <a href="./Service_crypto/crypto.html" target="_blank">Service Five</a>
+                
+                  </div>
+              </div>
                 <a href="./ContactUs/contact.html" target="_blank">Contact</a>
               </div>
             </div>
@@ -167,10 +174,10 @@
               <div
           class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start"
         >
-          <div class=" w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 z-10 flex w-full justify-center">
+          <div class="z-[1] w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4  flex w-full justify-center">
             <img src="./Images/about-1.png" class="w-[456px] h-auto mx-auto lg:mx-0 xl:mx-0 2xl:mx-0" />
           </div>
-          <div class="z-10 w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start ">
+          <div class="z-[1] w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 mt-10 md:text-center text-start lg:text-start xl:text-start ">
             <div class="flex gap-2 w-full">
               <span class="text-[#D3AC6A] text-2xl w-1/5">About Us</span>
               <hr class="border border-[#D3AC6A] my-4 w-full " />
@@ -205,13 +212,13 @@
 
       <!-- our vision -->
 
-      <div class="blackShadowLeft py-10  px-5 lg:px-0 xl:px-0 2xl:px-0 mt-0 relative py-20 mt-20">
+      <div class="blackShadowLeft py-10  px-5 lg:px-0 xl:px-0 2xl:px-0 mt-0  py-20 mt-20">
        
         <div class="">
           <div
           class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-10 justify-center items-start"
         >
-          <div class="z-10 w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 md:text-center text-start lg:text-start xl:text-start">
+          <div class="z-[1] w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 md:text-center text-start lg:text-start xl:text-start">
             <div class="flex gap-2 justify-start">
               <hr class="border border-[#D3AC6A] my-4 w-1/5 " />
               <h4 class="text-[#D3AC6A]  text-2xl w-32">Our Vision</h4>
@@ -238,7 +245,7 @@
 
            
           </div>
-          <div class="z-10 w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4 z-10">
+          <div class="z-[1] w-full lg:w-2/4 xl:w-2/4 2xl:w-2/4">
             <img src="./Images/about-2.png" class="w-[456px] h-auto mx-auto" />
           </div>
         </div>
@@ -251,7 +258,7 @@
 
       <!-- Our Service -->
       <div
-        class="ourServices px-5 lg:px-10 xl:px-10 2xl:px-10 pt-[20px] lg:pt-[100px] xl:pt-[100px] 2xl:pt-[100px] pb-20 relative"
+        class="ourServices px-5 lg:px-10 xl:px-10 2xl:px-10 pt-[20px]  pb-20 relative"
       >
       <div class="absolute top-[70%] left-5">
         <img src="./Images/scroll.png" class="w-20 h-auto hidden lg:block xl:block 2xl:block image-float" />
@@ -285,7 +292,7 @@
               VAT (Value Added Tax) returns are an essential part of the services offered by us. 
             </p>
             
-            <button class="readMore mt-auto">
+            <button class="readMore mt-auto rounded-md rounded-md">
               Read More
             </button>
           </div>
@@ -308,7 +315,7 @@
                 Our expert team offers Company accounts preparation and Corporation Tax submission on time.
               </p>
               <button
-                class="readMore mt-auto"
+                class="readMore mt-auto rounded-md"
               >
                 Read More
               </button>
@@ -330,7 +337,7 @@
                 Self-assessment and tax returns are two interconnected processes that individuals in the UK
               </p>
               <button
-                class="readMore mt-auto"
+                class="readMore mt-auto rounded-md"
               >
                 Read More
               </button>
@@ -352,7 +359,7 @@
                 Payroll is the process of calculating and distributing employee compensation, including salaries, wages, bonuses, and deductions, within an organization.
               </p>
               <button
-                class="readMore mt-auto"
+                class="readMore mt-auto rounded-md"
               >
                 Read More
               </button>
@@ -374,7 +381,7 @@
                 Cryptocurrency tax refers to the taxation of transactions involving digital currencies.
               </p>
               <button
-                class="readMore mt-auto"
+                class="readMore mt-auto rounded-md"
               >
                 Read More
               </button>
@@ -396,7 +403,7 @@
                 Check other what services we offer.
               </p>
               <button
-                class="readMore mt-auto"
+                class="readMore mt-auto rounded-md"
               >
                 Read More
               </button>
@@ -516,7 +523,7 @@
 
       <!-- News Letter -->
      
-      <div class="relative overflow-hidden">
+      <div class="relative overflow-hidden mt-10">
         <div class="z-10">
           <img
             src="./Images/NewsletterLeft.png"
@@ -739,22 +746,52 @@
           });
           </script>
       <script>
-        function openNav() {
-          var screenWidth = window.innerWidth;
-      
-          if (screenWidth <= 767) {
-          
-            document.getElementById("myNav").style.width = "80%";
-          } else {
-           
-            document.getElementById("myNav").style.width = "30%";
-          }
-        }
-      
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-        }
+  var navbar = document.getElementById("myNav");
+  var entireBar = document.getElementById("nav")
+  
+
+function openNav() {
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth <= 767) {
+    navbar.style.width = "80%";
+  } else {
+    navbar.style.width = "30%";
+  }
+}
+
+function closeNav() {
+  navbar.style.width = "0%";
+}
+
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+ 
+    entireBar.style.backgroundColor = "#45474B"; 
+    entireBar.style.position = "fixed"; 
+    entireBar.style.width = "100%"; 
+    navbar.style.height="600px";
+    entireBar.style.top = "0"; 
+    // entireBar.style.bottom = "0"; 
+    entireBar.style.zIndex = "100"; 
+  } else {
+    entireBar.style.backgroundColor = "#ffffff1a"; 
+    banner.style.marginTop = "150px"; 
+    entireBar.style.zIndex = "100"; 
+
+
+  }
+};
+
       </script>
+      <script>
+        function toggleNewPage() {
+            var newPageLinks = document.getElementById("newPageLinks");
+            newPageLinks.classList.toggle("show");
+        }
+        </script>
+        
       
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

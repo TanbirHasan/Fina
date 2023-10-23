@@ -15,8 +15,8 @@
 <body>
 
     <section class="bg-[#030303]">
-        <div class="header bg-black">
-            <div class="nav bg-[#ffffff1a]">
+        <div class="header bg-black relative">
+            <div class="nav bg-[#ffffff1a]" id="nav">
                 <nav
                   class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
                 >
@@ -65,7 +65,7 @@
                 </div>
               </div>
 
-            <div class="banner max-w-7xl mx-auto relative px-10 rounded-b-[20px] pb-10 lg:pb-0 xl:pb-0 2xl:pb-0">
+            <div class="banner max-w-7xl mx-auto relative px-10 rounded-b-[20px] pb-10 lg:pb-0 xl:pb-0 2xl:pb-0" id="banner">
                 <div class="md:mt-20 lg:mt-0 xl:mt-0 2xl:mt-0">
                     <div
                         class=" flex flex-col-reverse md:flex-row lg:flex-row gap-[20px] xl:flex-row 2xl:flex-row justify-center lg:h-screen xl:h-screen mx-auto items-center relative">
@@ -92,7 +92,7 @@
                                 <a href="../ContactUs/contact.html" class="contactButton font-medium text-[#D3AC6A] ">Contact Us</a>
                             </div>
                         </div>
-                        <div class="image w-full md:w-3/5 xl:w-3/5 2xl:w-3/5 relative mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 relative">
+                        <div class="image w-full md:w-3/5 xl:w-3/5 2xl:w-3/5 relative mt-10 lg:mt-0 xl:mt-0 2xl:mt-0">
                             <img src="../Images/topClip.png" class="absolute right-0 top-0 w-16 h-auto"/>
                             <img src="../Images/bottomClip.png" class="absolute left-0 bottom-0 w-16 h-auto"/>
                             <img src="../Images/serviceBannerImage.png" alt="Image"
@@ -499,23 +499,60 @@ We help our clients to start their own company and become self-employed. As a ch
            
 
 
-            <script>
-                function openNav() {
-                  var screenWidth = window.innerWidth;
-              
-                  if (screenWidth <= 767) {
-                  
-                    document.getElementById("myNav").style.width = "80%";
-                  } else {
-                   
-                    document.getElementById("myNav").style.width = "30%";
-                  }
-                }
-              
-                function closeNav() {
-                  document.getElementById("myNav").style.width = "0%";
-                }
-              </script>
+      <script>
+        var navbar = document.getElementById("myNav");
+        var entireBar = document.getElementById("nav")
+        var banner = document.getElementById("banner")
+      
+      function openNav() {
+        var screenWidth = window.innerWidth;
+      
+        if (screenWidth <= 767) {
+          navbar.style.width = "80%";
+        } else {
+          navbar.style.width = "30%";
+        }
+      }
+      
+      function closeNav() {
+        navbar.style.width = "0%";
+      }
+      
+      
+      window.onscroll = function () {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+       
+        //   entireBar.style.backgroundColor = "#45474B"; 
+        //   entireBar.style.position = "fixed"; 
+        //   entireBar.style.width = "100%"; 
+        //   navbar.style.height="600px";
+        //   entireBar.style.top = "0"; 
+        //   entireBar.style.zIndex = "1000"; 
+        // } else {
+        //   entireBar.style.backgroundColor = "#ffffff1a"; 
+        //   banner.style.paddingTop = "100px"; 
+        // }
+        entireBar.style.backgroundColor = "#45474B"; 
+    entireBar.style.position = "fixed"; 
+    entireBar.style.width = "100%"; 
+    navbar.style.height="600px";
+
+    entireBar.style.top = "0"; 
+    entireBar.style.zIndex = "100"; 
+    navbar.style.zIndex = "150"; 
+  } else {
+    // entireBar.style.backgroundColor = "#ffffff1a"; 
+   
+    entireBar.style.backgroundColor = "";
+  entireBar.style.position = ""; // Remove fixed position
+  entireBar.style.width = "";
+  navbar.style.height = "";
+  entireBar.style.top = "";
+  entireBar.style.zIndex = "";
+  }
+      };
+      
+            </script>
 </body>
 
 </html>
