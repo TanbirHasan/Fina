@@ -8,10 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+   
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
+  
   </head>
 
   <body>
@@ -180,7 +186,7 @@
             <div
               class="w-full md:w-3/5 lg:w-3/5 xl:w-3/5 2xl:w-3/5 bg-[#1F1F1F] p-5 z-5 rounded-xl flex flex-col md:ml-auto w-full px-5 lg:px-10 xl:px-10 2xl:px-10 mx-2 lg:mx-10 xl:mx-10 2xl:mx-10 md:py-8 mt-8 md:mt-0"
             >
-              <form>
+              <form id="contactForm">
                 <div class="mb-4">
                   <div class="flex justify-between space-x-4">
                     <div class="w-1/2 form-input-group relative">
@@ -196,6 +202,7 @@
                         id="first-name"
                         name="first-name"
                         class="w-full bg-transparent border-b border-[#D3AC6A] pt-3 focus:outline-none focus:border-blue-500"
+                        required
                       />
                     </div>
                     <div class="w-1/2 form-input-group relative">
@@ -211,6 +218,7 @@
                         id="last-name"
                         name="last-name"
                         class="w-full bg-transparent border-b border-[#D3AC6A] pt-3 focus:outline-none focus:border-blue-500"
+                        required
                       />
                     </div>
                   </div>
@@ -218,7 +226,7 @@
                 <div class="mb-4 form-input-group relative">
                   <label
                     for="email"
-                    class="absolute left-0 top-0 pl-0 pr-2 py-2"
+                    class="absolute left-0 top-0 pl-0 pr-2 py-2 mb-3"
                     >Your Email Address</label
                   >
                   <br />
@@ -229,53 +237,46 @@
                     name="email"
                     placeholder="youremail@mail.com"
                     class="w-full bg-transparent border-b border-[#D3AC6A] py-2 focus:outline-none focus:border-blue-500"
+                    required
                   />
                 </div>
 
                 <div class="mb-4 form-input-group relative">
                   <label for="message" class="absolute left-0 top-0 pl-0 pr-2 py-1">Which related problem are you facing?</label>
                   <br />
-                  <select id="message" name="message" class="w-full bg-transparent border-b border-[#D3AC6A] py-2 focus:outline-none focus:border-blue-500" onchange="redirectOnChange(this)">
+                  <select id="message" name="message" class="w-full bg-transparent border-b border-[#D3AC6A] py-2 focus:outline-none focus:border-blue-500"   required>
                     <option value="" selected disabled class="text-black">Select Service</option>
-                    <option value="../Service_vat/Vat.html" class="text-black">Select One</option>
-                    <option value="../Service_comapanyAccounts/company.html" class="text-black">Select Two</option>
-                    <option value="../Service_assesment/assesment.html" class="text-black">Select Three</option>
-                    <option value="../Service_payroll/payroll.html" class="text-black">Select Four</option>
-                    <option value="../Service_crypto/crypto.html" class="text-black">Select Five</option>
+                    <option value="Select One" class="text-black">Vat Returns</option>
+                    <option value="Select Two" class="text-black">Company Accounts</option>
+                    <option value="Select Three" class="text-black">Sell Assesment</option>
+                    <option value="Select Four" class="text-black">Payroll</option>
+                    <option value="Select Five" class="text-black">Cryptocurrency Tax</option>
                   </select>
+                  
                 </div>
                 
-                <script>
-                  function redirectOnChange(selectElement) {
-                    var selectedValue = selectElement.value;
-                    if (selectedValue) {
-                      window.location.href = selectedValue;
-                    }
-                  }
-                </script>
+              
                 
                 
 
                 <div class="mb-4 form-input-group relative">
-                  <label
-                    for="message"
-                    class="absolute left-0 top-0 pl-0 pr-2 py-1"
-                    >Type your messages</label
-                  >
+                  <label for="user-message" class="absolute left-0 top-0 pl-0 pr-2 py-1">Type your messages</label>
                   <br />
-
+                
                   <textarea
-                    id="message"
+                    id="user-message" 
                     name="message"
                     placeholder="Lorem ipsum dolor sit amet consectetur"
                     class="w-full bg-transparent border-b border-[#D3AC6A] py-2 focus:outline-none focus:border-blue-500"
                     rows="3"
+                    required
                   ></textarea>
                 </div>
                 <div class="mt-6 flex justift-left left-0">
                   <button
                     class="contactButton px-10 py-3 border border-solid border-[#D3AC6A] rounded text-[#D3AC6A]"
-                    type="submit"
+                    type="button"
+                    onclick="submitForm()"
                   >
                     Send
                   </button>
@@ -460,31 +461,54 @@
       </div>
     </section>
 
+ 
+<script type="text/javascript">
+   (function(){
+      emailjs.init("pgMyCiBn-7EqRACO6");
+   })();
+</script>
     <script>
-        document
-          .getElementById("emailForm")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-  
-            const formData = new FormData(event.target);
-  
-            const formDataJSON = {};
-            formData.forEach((value, key) => {
-              formDataJSON[key] = value;
-            });
-  
-            sendEmail(formDataJSON);
-          });
-  
-        function sendEmail(formData) {
-          // You can use AJAX, fetch, or another method to send the data to a server-side script or email service.
-          // Here, we'll just log the data for demonstration purposes.
-          console.log("Form Data:", formData);
-  
-          // Replace the above console.log with code to send the email using a server-side script or API.
-        }
-      </script>
+      function submitForm() {
+       
+        var firstName = document.getElementById('first-name').value;
+        var lastName = document.getElementById('last-name').value;
+        var email = document.getElementById('email').value;
+        var selectedService = document.getElementById('message').value;
+        var userMessage = document.getElementById('user-message').value;
+    
+    
+        // console.log("First Name:", firstName);
+        // console.log("Last Name:", lastName);
+        // console.log("Email:", email);
+        // console.log("Selected Service:", selectedService);
+        // console.log("User Message:", userMessage);
+        if (!firstName || !lastName || !email || !selectedService || !userMessage) {
+      alert("Please fill in all fields before submitting.");
+      return false; 
+    }
+    
+      
+        var template_params = {
+          first_name: firstName,
+          last_name: lastName,
+          email: email,
+          selected_service: selectedService,
+          user_message: userMessage
+        };
+    
+       
+        emailjs.send("service_ge5bbbj", "template_51lq8bi", template_params)
+          .then(function (response) {
+            alert("Sent successfully", response);
+           
+          }, function (error) {
+            alert("Failed to send", error);
 
+          });
+      }
+    </script>
+    
+    
     <script>
       var navbar = document.getElementById("myNav");
       var entireBar = document.getElementById("nav");
