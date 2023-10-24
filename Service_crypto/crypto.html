@@ -18,7 +18,7 @@
         <div class="headerParent">
             <div class="nav bg-[#ffffff1a]" id="nav">
                 <nav
-                  class="flex items-center justify-between py-2 shadow-lg px-10 max-w-7xl mx-auto"
+                  class="flex items-center justify-between py-2 px-10 max-w-7xl mx-auto"
                 >
                   <div class="z-40">
                     <button class="text-white text-xl">
@@ -55,11 +55,18 @@
                     <a href="#">Home</a>
                     <a href="../AboutUs/about.html" target="_blank">About</a>
                     <a href="../Service/service.html" target="_blank">Services</a>
-                    <a href="../Service_vat/Vat.html" target="_blank">Service One</a>
+                    <div class="dropdown">
+                      <a href="javascript:void(0)" onclick="toggleNewPage()">Other Services</a>
+                      <div id="newPageLinks" class="nested-links">
+                       <a href="../Service_vat/Vat.html" target="_blank">Service One</a>
                     <a href="../Service_comapanyAccounts/company.html" target="_blank">Service Two</a>
                     <a href="../Service_assesment/assesment.html" target="_blank">Service Three</a>
                     <a href="../Service_payroll/payroll.html" target="_blank">Service Four</a>
                     <a href="../Service_crypto/crypto.html" target="_blank">Service Five</a>
+                
+                    
+                      </div>
+                  </div>
                     <a href="../ContactUs/contact.html" target="_blank">Contact</a>
                   </div>
                 </div>
@@ -147,16 +154,16 @@
           <div class="z-10">
             <img
               src="../Images/NewsletterLeft.png"
-              class="absolute left-[-50%] top-[-42%]  hidden lg:block xl:block 2xl:block"
+              class="absolute left-[-50%] top-[-50%]  hidden lg:block xl:block 2xl:block"
             />
           </div>
           <div class="z-10">
             <img
               src="../Images/NewsletterRight.png"
-              class="absolute right-[-50%] top-[-42%] hidden lg:block xl:block 2xl:block"
+              class="absolute right-[-50%] top-[-50%] hidden lg:block xl:block 2xl:block"
             />
           </div>
-          <div class="max-w-7xl mx-auto mt-8 pt-10 pb-24 px-5 lg:px-10 xl:px-10 2xl:px-10 text-center lg:text-start xl:text-start">
+          <div class="max-w-7xl mx-auto pt-10 pb-24 px-5 lg:px-10 xl:px-10 2xl:px-10 text-center lg:text-start xl:text-start">
             <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 bg-[#1F1F1F] rounded-2xl shadow-lg py-24 px-5 z-20">
                 <div class="rounded-lg shadow-md col-span-1 mx-auto">
                     <h2 class="text-5xl text-white font-semibold mb-4">Get a <span class="text-[#D3AC6A]">quote</span>
@@ -187,148 +194,148 @@
   
   
         <div>
-          <footer
-          class="relative bg-black text-white  border-t-2 border-t-[#D3AC6A] px-5 lg:px-10 xl:px-10 2xl:px-10 z-50 py-16"
+        <footer
+        class="relative bg-black text-white  border-t-2 border-t-[#D3AC6A] px-5 lg:px-10 xl:px-10 2xl:px-10 z-50 py-16"
+      >
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-0 max-w-7xl mx-auto "
         >
-          <div
-            class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-0 max-w-7xl mx-auto"
-          >
-            <div class="w-full text-center mb-4 md:mb-0 p-4">
-              <img src="../Images/rw-01.jpg" alt="Company Logo" />
+          <div class="w-full text-center mb-4 md:mb-0 p-4">
+            <img src="../Images/rw-01.jpg" alt="Company Logo" />
+          </div>
+    
+          <div class="flex flex-col w-full">
+            <h3 class="text-lg font-medium text-[#D3AC6A]">CONTACT</h3>
+            
+            <ul>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >+608809480194</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >info@royalwharf.pro</a
+                >
+              </li>
+            </ul>
+    
+            <h3 class="text-lg font-medium mt-6 text-[#D3AC6A] ">INFORMATION</h3>
+            
+    
+            <ul>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+    
+          <div class="w-full justify-left items-center">
+            <h3
+              class="text-lg font-medium text-[#D3AC6A] justify-left items-center"
+            >
+              SITE MAP
+            </h3>
+           
+    
+            <ul>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >Home</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >Services</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >About Us</a
+                >
+              </li>
+              <li class="py-2">
+                <a
+                  href="#"
+                  class="text-white hover:text-white transition duration-300 text-[14px]"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+    
+          <div class="w-full md:mt-0 justify-left items-center ">
+            <h3 class="text-lg font-medium text-[#D3AC6A]">
+              Royal <span class="text-white">Wharf</span>
+            </h3>
+            <div class="border border-[#D3AC6A] border-solid w-14 mb-2"></div>
+            <div class="text-white flex gap-1 items-start pb-3 ml-[-10px]">
+              <span
+                ><img
+                  src="../Images/linkedinicon-removebg-preview.png "
+                  class="w-9 h-auto"
+              /></span>
+              <span
+                ><img
+                  src="../Images/facebookIcon-removebg-preview.png"
+                  class="w-3 h-auto"
+              /></span>
             </div>
-      
-            <div class="flex flex-col w-full">
-              <h3 class="text-lg font-medium text-[#D3AC6A]">CONTACT</h3>
-              <div class="border border-[#D3AC6A] border-solid w-20 mb-2"></div>
-              <ul>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >+608809480194</a
-                  >
-                </li>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >nusratjahan605@gmail.com</a
-                  >
-                </li>
-              </ul>
-      
-              <h3 class="text-lg font-medium mt-6 text-[#D3AC6A]">INFORMATION</h3>
-              <div class="border border-[#D3AC6A] border-solid w-24 mb-2"></div>
-      
-              <ul>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >Privacy Policy</a
-                  >
-                </li>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >Terms and Conditions</a
-                  >
-                </li>
-              </ul>
-            </div>
-      
-            <div class="w-full justify-left items-center">
-              <h3
-                class="text-lg font-medium text-[#D3AC6A] justify-left items-center"
-              >
-                SITE MAP
-              </h3>
-              <div class="border border-[#D3AC6A] border-solid w-20 mb-2"></div>
-      
-              <ul>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >Home</a
-                  >
-                </li>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >Services</a
-                  >
-                </li>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >About Us</a
-                  >
-                </li>
-                <li class="py-2">
-                  <a
-                    href="#"
-                    class="text-white hover:text-white transition duration-300"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
-      
-            <div class="w-full md:mt-0 justify-left items-center ">
-              <h3 class="text-lg font-medium text-[#D3AC6A]">
-                Royal <span class="text-white">Wharf</span>
-              </h3>
-              <div class="border border-[#D3AC6A] border-solid w-14 mb-2"></div>
-              <div class="text-white flex gap-1 items-start pb-3 ml-[-10px]">
-                <span
-                  ><img
-                    src="../Images/linkedinicon-removebg-preview.png "
-                    class="w-9 h-auto"
-                /></span>
-                <span
-                  ><img
-                    src="../Images/facebookIcon-removebg-preview.png"
-                    class="w-3 h-auto"
-                /></span>
+    
+            <p class="text-sm text-gray-300 text-[14px]">
+              At Royal Wharf Accountants, we're more than just numbers; we're your
+              trusted Financial partners. With a commitment to excellence and a
+              passion for precision, we have been serving individuals and
+              businesses based in London.
+            </p>
+            <div class="flex gap-2 w-[110%] mt-5 items-center">
+              <div class="">
+                <img src="../Images/acca.png" class="w-9 h-9" />
               </div>
-      
-              <p class="text-sm text-gray-300">
-                At Royal Wharf Accountants, we're more than just numbers; we're your
-                trusted Financial partners. With a commitment to excellence and a
-                passion for precision, we have been serving individuals and
-                businesses based in London.
-              </p>
-              <div class="flex gap-2 w-[110%] mt-5 items-center">
-                <div class="">
-                  <img src="../Images/acca.png" class="w-9 h-9" />
+    
+              <div class="border border-r h-9"></div>
+    
+              <div>
+                <div class="flex gap-2">
+                  <img src="../Images/world.png" class="w-5 h-5" />
+                  <p class="text-[#D3AC6A] text-[14px]">Please consider the environment</p>
                 </div>
-      
-                <div class="border border-r h-9"></div>
-      
-                <div>
+                <div class="flex gap-2">
                   <div class="flex gap-2">
-                    <img src="../Images/world.png" class="w-5 h-5" />
-                    <p class="text-[#D3AC6A] text-[14px]">Please consider the environment</p>
+                    <img src="../Images/recycle.png" class="w-5 h-5" />
+                    <p class="text-[#009605] text-[14px]">Recycle Always</p>
                   </div>
                   <div class="flex gap-2">
-                    <div class="flex gap-2">
-                      <img src="../Images/recycle.png" class="w-5 h-5" />
-                      <p class="text-[#009605] text-[14px]">Recycle Always</p>
-                    </div>
-                    <div class="flex gap-2">
-                      <img src="../Images/leaves.png" class="w-5 h-5" />
-                      <p class="text-[#009605] text-[14px]">Save Paper</p>
-                    </div>
+                    <img src="../Images/leaves.png" class="w-5 h-5" />
+                    <p class="text-[#009605] text-[14px]">Save Paper</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </footer>
+        </div>
+      </footer>
          </div>
 
 
@@ -380,6 +387,12 @@
   }
     
           </script>
+          <script>
+            function toggleNewPage() {
+                var newPageLinks = document.getElementById("newPageLinks");
+                newPageLinks.classList.toggle("show");
+            }
+            </script>
 
 </body>
 

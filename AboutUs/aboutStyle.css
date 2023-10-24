@@ -21,6 +21,18 @@ body {
   background-position: center;
 }
 
+
+
+.nested-links {
+  display: none;
+}
+
+
+
+.nested-links.show {
+  display: block;
+  transition: display 0.3s ease;
+}
 .SpecialityBackgroundImg {
   transform: rotate(10deg);
 }
@@ -37,13 +49,11 @@ body {
     background-size: 130%;
   } */
 
-.serviceCard {
-  background-color: #141414a9;
-}
 
-.serviceCard {
-  box-shadow: "0px 10px 20px #D3AC6A";
-}
+  .serviceCard {
+    background-color: #0f0f0fd0!important;
+    box-shadow: 0 3px 10px rgba(211, 172, 106, 0.263)!important;
+  }
 
 @keyframes floatAnimation {
   0% {

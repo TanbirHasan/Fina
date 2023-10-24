@@ -20,6 +20,18 @@ body{
 }
 
 
+
+.nested-links {
+  display: none;
+}
+
+
+
+.nested-links.show {
+  display: block;
+  transition: display 0.3s ease;
+}
+
 @keyframes floatAnimation {
   0% {
     transform: translateY(-10px);

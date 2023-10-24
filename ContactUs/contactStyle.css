@@ -30,6 +30,18 @@ body{
   transition-duration: 0.1s;
 }
 
+
+
+.nested-links {
+  display: none;
+}
+
+
+
+.nested-links.show {
+  display: block;
+  transition: display 0.3s ease;
+}
 .contactButton::before {
   content: "";
   position: absolute;

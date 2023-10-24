@@ -24,6 +24,18 @@ body {
 ;
 }
 
+
+
+.nested-links {
+  display: none;
+}
+
+
+
+.nested-links.show {
+  display: block;
+  transition: display 0.3s ease;
+}
 .header::before {
   content: "";
   position: absolute;
