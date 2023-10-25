@@ -246,11 +246,11 @@
                   <br />
                   <select id="message" name="message" class="w-full bg-transparent border-b border-[#D3AC6A] py-2 focus:outline-none focus:border-blue-500"   required>
                     <option value="" selected disabled class="text-black">Select Service</option>
-                    <option value="Select One" class="text-black">Vat Returns</option>
-                    <option value="Select Two" class="text-black">Company Accounts</option>
-                    <option value="Select Three" class="text-black">Sell Assesment</option>
-                    <option value="Select Four" class="text-black">Payroll</option>
-                    <option value="Select Five" class="text-black">Cryptocurrency Tax</option>
+                    <option value="vat" class="text-black">Vat Returns</option>
+                    <option value="company" class="text-black">Company Accounts</option>
+                    <option value="sell" class="text-black">Sell Assesment</option>
+                    <option value="payroll" class="text-black">Payroll</option>
+                    <option value="crypto" class="text-black">Cryptocurrency Tax</option>
                   </select>
                   
                 </div>
@@ -497,9 +497,10 @@
         };
     
        
-        emailjs.send("service_ge5bbbj", "template_51lq8bi", template_params)
+        emailjs.send("service_ge5bbbj", "template_hzac13c", template_params)
           .then(function (response) {
             alert("Sent successfully", response);
+            document.getElementById('contactForm').reset();
            
           }, function (error) {
             alert("Failed to send", error);
